@@ -1,39 +1,38 @@
 // oude style loops
 
-var colors = ["yellow", "blue", "red", "orange"];
+const colors = ["yellow", "blue", "red", "orange"];
 
-var i = 0;
+let i = 0;
 while (i < colors.length) {
-    console.log(colors[i++]);
+    console.log(colors[i]);
+    i++;
 }
 
-for (i = 0; i < colors.length;) {
-    console.log(colors[i++]);
+for (i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
 }
 
 //nieuwe stijl: array
 
 const array1 = ['yellow', 'blue', 'red', 'orange'];
 
-array1.forEach(element => console.log(element));
+array1.forEach(color => console.log(color));
 
 // extra vragen 
-// 1: 2
+// 1: 5 (while), 2(loop)
 // 2: 1
 // 3: array is makkelijker leesbaar, logischere benamingen
 //4. JA:
 
-const user = {
+const myColors = {
 
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    age: 25,
-    dob: '08/02/1989',
-    active: true
+    colorWall: 'red',
+    colorFruit: 'yellow',
+    ColorClothes: 'blue',
+    ColorHair: 'orange',
+    ColorBag: 'pink',
 };
 
-// iterate over the user object
-
-for (const key in user) {
-    console.log(`${key}: ${user[key]}`);
+for (i in myColors) {
+    console.log(myColors[i]);
 }
